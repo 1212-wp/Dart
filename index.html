@@ -1,0 +1,290 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salud Mental</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f0f8ff;
+    }
+    header, footer {
+      background-color: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 1rem;
+    }
+    img, video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    form {
+      background: #e3f2fd;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+    input, button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+    canvas {
+      display: block;
+      margin: 2rem auto;
+      background: #fff;
+      border: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienestar y Salud<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Salud Mental</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f0f8ff;
+    }
+    header, footer {
+      background-color: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 1rem;
+    }
+    img, video {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    form {
+      background: #e3f2fd;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+    input, button {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      border: none;
+      border-radius: 5px;
+    }
+    canvas {
+      display: block;
+      margin: 2rem auto;
+      background: #fff;
+      border: 2px solid #4a90e2;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienestar y Salud Mental</h1>
+  </header>
+
+  <div class="container">
+    <h2>¿Por qué es importante cuidar tu salud mental?</h2>
+    <p>
+      La salud mental afecta cómo pensamos, sentimos y actuamos. También determina cómo manejamos el estrés, nos relacionamos con los demás y tomamos decisiones.
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=1000&q=80" alt="Persona relajándose en la naturaleza">
+
+    <h2>Consejos para el bienestar mental</h2>
+    <ul>
+      <li>Practica la gratitud diariamente.</li>
+      <li>Haz ejercicio regularmente.</li>
+      <li>Conéctate con personas que te apoyen.</li>
+      <li>Busca ayuda cuando la necesites.</li>
+    </ul>
+
+    <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1000&q=80" alt="Apoyo emocional entre amigos">
+
+    <h2>Video educativo</h2>
+    <video controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      Tu navegador no soporta el elemento de video.
+    </video>
+
+    <h2>Contáctanos</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="mensaje">Mensaje:</label>
+      <input type="text" id="mensaje" name="mensaje" required />
+
+      <button type="submit">Enviar</button>
+    </form>
+
+    <h2>🎮 Mini Videojuego: Mueve al personaje</h2>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Bienestar Mental. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    // Juego simple: mueve un personaje con las flechas
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+
+    let x = 180;
+    let y = 180;
+    const size = 40;
+    const speed = 5;
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = "#4a90e2";
+      ctx.fillRect(x, y, size, size);
+    }
+
+    document.addEventListener("keydown", (e) => {
+      switch (e.key) {
+        case "ArrowUp":
+          y = Math.max(0, y - speed);
+          break;
+        case "ArrowDown":
+          y = Math.min(canvas.height - size, y + speed);
+          break;
+        case "ArrowLeft":
+          x = Math.max(0, x - speed);
+          break;
+        case "ArrowRight":
+          x = Math.min(canvas.width - size, x + speed);
+          break;
+      }
+      draw();
+    });
+
+    draw(); // primer render
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Juego Salud Mental</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #eef6fb;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    canvas {
+      background-color: #fff;
+      border: 2px solid #4a90e2;
+      margin: 2rem auto;
+      display: block;
+    }
+
+    footer {
+      background-color: #4a90e2;
+      color: white;
+      padding: 1rem;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mini Juego Salud Mental</h1>
+    <p>Usa las flechas para mover el personaje</p>
+  </header>
+
+  <h2>🎮 Mueve el personaje con las teclas ← ↑ → ↓</h2>
+  <canvas id="gameCanvas" width="500" height="500"></canvas>
+
+  <footer>
+    <p>&copy; 2025 Bienestar Mental - Juego educativo</p>
+  </footer>
+
+  <script>
+    const canvas = document.getElementById("gameCanvas");
+    const ctx = canvas.getContext("2d");
+
+    let x = 230;
+    let y = 230;
+    const size = 40;
+    const speed = 10;
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Fondo del juego
+      ctx.fillStyle = "#e3f2fd";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Personaje
+      ctx.fillStyle = "#4a90e2";
+      ctx.fillRect(x, y, size, size);
+    }
+
+    document.addEventListener("keydown", (e) => {
+      switch (e.key) {
+        case "ArrowUp":
+          y = Math.max(0, y - speed);
+          break;
+        case "ArrowDown":
+          y = Math.min(canvas.height - size, y + speed);
+          break;
+        case "ArrowLeft":
+          x = Math.max(0, x - speed);
+          break;
+        case "ArrowRight":
+          x = Math.min(canvas.width - size, x + speed);
+          break;
+      }
+      draw();
+    });
+
+    draw(); // Dibujo inicial
+  </script>
+</body>
+</html>
